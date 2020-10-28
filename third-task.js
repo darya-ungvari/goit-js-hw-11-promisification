@@ -21,7 +21,7 @@ const makeTransaction = (transaction) => {
   };
   
   const logError = id => {
-    console.error(`Error processing transaction ${id}. Please try again later.`);
+    console.warn(`Error processing transaction ${id}. Please try again later.`);
   };
   
   makeTransaction({ id: 70, amount: 150 })
